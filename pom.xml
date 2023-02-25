@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.xueden</groupId>
-    <artifactId>student-mangement-system</artifactId>
+    <artifactId>corpus-system</artifactId>
     <version>1.0.0</version>
     <name>student-mangement-system</name>
     <!--指定打包方式-->
