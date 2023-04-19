@@ -58,4 +58,5 @@ public interface ICourseService {
      * @return
      */
     long getCount();
+
 }

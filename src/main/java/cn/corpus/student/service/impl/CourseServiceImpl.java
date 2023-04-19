@@ -41,6 +41,7 @@ public class CourseServiceImpl implements ICourseService {
     @Override
     public Object getList(CourseQueryCriteria queryCriteria, Pageable pageable) {
         Page<Course> page = courseRepository.findAll((root, query, criteriaBuilder) -> QueryHelp.getPredicate(root,queryCriteria,criteriaBuilder),pageable);
+
         return PageUtil.toPage(page);
     }
 

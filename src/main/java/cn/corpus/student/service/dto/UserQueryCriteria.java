@@ -23,7 +23,7 @@ public class UserQueryCriteria {
      * 根据真实姓名模糊查询
      */
     @EnableXuedenQuery
-    private String sex;
+    private String translate;
 
 
     /**

@@ -36,4 +36,4 @@ spring:
             class: javax.net.ssl.SSLSocketFactory
 # 用户头像存放路径
 user:
-  icon: C:\Users\52413\Desktop\毕业设计\用户头像\
+  icon: C:\Users\YuHaowen\Desktop\毕业设计\用户头像

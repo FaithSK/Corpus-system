@@ -12,8 +12,8 @@ import lombok.Data;
  */
 @Data
 @Entity
-@Table(name = "s_student")
-@org.hibernate.annotations.Table(appliesTo = "s_student",comment="学生信息表")
+@Table(name = "s_word")
+@org.hibernate.annotations.Table(appliesTo = "s_word",comment="单词信息表")
 public class Student extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,8 +41,8 @@ public class Student extends BaseEntity {
     /**
      * 性别
      */
-    @Column(name = "sex")
-    private String sex;
+    @Column(name = "translate")
+    private String translate;
 
     /**
      * 手机号
