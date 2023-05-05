@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Administrator
  */
 @SpringBootApplication
-public class StudentMangementSystemApplication {
+public class CorpusSystemApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(StudentMangementSystemApplication.class, args);
+        SpringApplication.run(CorpusSystemApplication.class, args);
     }
 
 }
