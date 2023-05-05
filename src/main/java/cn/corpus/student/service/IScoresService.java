@@ -11,9 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 
 /**功能描述：成绩管理业务接口
- * @author:梁志杰
- * @date:2022/12/18
- * @description:cn.xueden.student.service
  * @version:1.0
  */
 public interface IScoresService {

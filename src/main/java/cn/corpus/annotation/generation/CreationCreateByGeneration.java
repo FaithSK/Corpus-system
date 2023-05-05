@@ -7,9 +7,6 @@ import org.hibernate.tuple.GenerationTiming;
 import org.hibernate.tuple.ValueGenerator;
 
 /**功能描述：创建者ID生成器
- * @author:梁志杰
- * @date:2022/12/1
- * @description:cn.xueden.annotation.generation
  * @version:1.0
  */
 public class CreationCreateByGeneration implements AnnotationValueGeneration<EnableXuedenCreateBy> {

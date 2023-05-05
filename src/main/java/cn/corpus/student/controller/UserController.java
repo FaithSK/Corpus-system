@@ -25,9 +25,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**功能描述：系统用户前端控制器
- * @author:梁志杰
- * @date:2022/12/3
- * @description:cn.xueden.student.controller
  * @version:1.0
  */
 @RestController

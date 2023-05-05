@@ -11,9 +11,6 @@ import java.util.List;
 
 
 /**功能描述：班级信息实体类
- * @author:梁志杰
- * @date:2022/12/9
- * @description:cn.xueden.student.domain
  * @version:1.0
  */
 @Data

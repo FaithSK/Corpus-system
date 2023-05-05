@@ -21,9 +21,6 @@ import java.util.List;
 
 
 /**功能描述：系统角色接口实现类
- * @author:梁志杰
- * @date:2022/12/8
- * @description:cn.xueden.student.service.impl
  * @version:1.0
  */
 @Service

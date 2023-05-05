@@ -3,9 +3,6 @@ package cn.corpus.student.vo;
 import lombok.Data;
 
 /**Echarts返回结果集对象
- * @author:梁志杰
- * @date:2022/12/20
- * @description:cn.xueden.student.vo
  * @version:1.0
  */
 @Data

@@ -11,9 +11,6 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * @author:梁志杰
- * @date:2022/12/1
- * @description:cn.xueden.annotation.generation
  * @version:1.0
  */
 final class UpdateByGenerators {

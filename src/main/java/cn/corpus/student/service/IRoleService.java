@@ -7,9 +7,6 @@ import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 /**功能描述：系统角色接口
- * @author:梁志杰
- * @date:2022/12/8
- * @description:cn.xueden.student.service
  * @version:1.0
  */
 public interface IRoleService {

@@ -16,9 +16,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**功能描述：系统用户业务接口实现类
- * @author:梁志杰
- * @date:2022/12/2
- * @description:cn.xueden.student.service.impl
  * @version:1.0
  */
 @Service

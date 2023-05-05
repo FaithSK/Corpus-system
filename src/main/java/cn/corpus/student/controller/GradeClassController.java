@@ -19,9 +19,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**功能描述：班级信息前端控制器
- * @author:梁志杰
- * @date:2022/12/9
- * @description:cn.xueden.student.controller
  * @version:1.0
  */
 @RestController

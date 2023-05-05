@@ -5,9 +5,6 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 /**功能描述：系统用户实体类
- * @author:梁志杰
- * @date:2022/12/2
- * @description:cn.xueden.student.domain
  * @version:1.0
  */
 @Data

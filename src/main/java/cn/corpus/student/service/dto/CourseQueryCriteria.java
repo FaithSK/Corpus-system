@@ -4,9 +4,6 @@ import cn.corpus.annotation.EnableXuedenQuery;
 import lombok.Data;
 
 /**功能描述：课程查询条件
- * @author:梁志杰
- * @date:2022/12/14
- * @description:cn.xueden.student.service.dto
  * @version:1.0
  */
 @Data

@@ -31,9 +31,6 @@ import java.util.stream.Collectors;
 
 
 /**功能描述：成绩管理业务接口实现类
- * @author:梁志杰
- * @date:2022/12/18
- * @description:cn.xueden.student.service.impl
  * @version:1.0
  */
 @Service

@@ -14,9 +14,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 /**功能描述：教师信息前端控制器
- * @author:梁志杰
- * @date:2022/12/15
- * @description:cn.xueden.student.controller
  * @version:1.0
  */
 @RestController

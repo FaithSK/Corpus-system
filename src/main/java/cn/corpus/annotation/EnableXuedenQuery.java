@@ -6,9 +6,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**功能描述：自定义注解 用于查询
- * @author:梁志杰
- * @date:2022/9/30
- * @description:cn.xueden.annotation
  * @version:1.0
  */
 @Target(ElementType.FIELD)

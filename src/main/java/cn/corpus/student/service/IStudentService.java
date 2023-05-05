@@ -5,9 +5,6 @@ import cn.corpus.student.service.dto.StudentQueryCriteria;
 import org.springframework.data.domain.Pageable;
 
 /**功能描述：学生信息业务接口
- * @author:梁志杰
- * @date:2022/12/11
- * @description:cn.xueden.student.service
  * @version:1.0
  */
 public interface IStudentService {
