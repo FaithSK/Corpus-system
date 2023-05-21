@@ -1,22 +1,20 @@
 package cn.corpus.student.service.impl;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.bean.copier.CopyOptions;
 import cn.corpus.student.domain.Course;
 import cn.corpus.student.domain.GradeClass;
 import cn.corpus.student.domain.Scores;
-import cn.corpus.student.domain.Student;
+import cn.corpus.student.domain.Student1;
 import cn.corpus.student.repository.ScoresRepository;
-import cn.corpus.student.repository.StudentRepository;
+import cn.corpus.student.repository.Student1Repository;
 import cn.corpus.student.service.IScoresService;
 import cn.corpus.student.service.dto.ScoresQueryCriteria;
-
 import cn.corpus.student.vo.BarEchartsSeriesModel;
 import cn.corpus.student.vo.EchartsSeriesModel;
 import cn.corpus.student.vo.RegisterScoresModel;
 import cn.corpus.utils.PageUtil;
 import cn.corpus.utils.QueryHelp;
-
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.bean.copier.CopyOptions;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -24,7 +22,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.DoubleSummaryStatistics;
+import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
@@ -39,9 +40,9 @@ public class ScoresServiceImpl implements IScoresService {
 
     private final ScoresRepository scoresRepository;
 
-    private final StudentRepository studentRepository;
+    private final Student1Repository studentRepository;
 
-    public ScoresServiceImpl(ScoresRepository scoresRepository, StudentRepository studentRepository) {
+    public ScoresServiceImpl(ScoresRepository scoresRepository, Student1Repository studentRepository) {
         this.scoresRepository = scoresRepository;
         this.studentRepository = studentRepository;
     }
@@ -68,9 +69,9 @@ public class ScoresServiceImpl implements IScoresService {
     public void registerScores(RegisterScoresModel scoresModel) {
 
         // 根据班级ID获取该班级下的所有学生
-        List<Student> studentList = studentRepository.findAllByGradeClassId(scoresModel.getGradeClassId());
+        List<Student1> studentList = studentRepository.findAllByGradeClassId(scoresModel.getGradeClassId());
 
-        for(Student student: studentList){
+        for(Student1 student: studentList){
             // 根据课程ID和学生ID查询成绩信息
             Scores dbScores = scoresRepository.getCourseByCourseIdAndStudentId(scoresModel.getCourseId(),student.getId());
             if(dbScores==null){

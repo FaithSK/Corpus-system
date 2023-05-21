@@ -27,9 +27,9 @@ public class Scores extends BaseEntity {
     /**
      * 学生对象
      */
-    @OneToOne(targetEntity = Student.class)
+    @OneToOne(targetEntity = Student1.class)
     @JoinColumn(name = "student_id",referencedColumnName = "id")
-    private Student student;
+    private Student1 student;
 
     /**
      * 课程对象
